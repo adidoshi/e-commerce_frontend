@@ -1,0 +1,109 @@
+.productPageTitle {
+  margin: 10px 0;
+}
+
+.searchInp {
+  width: auto;
+}
+
+.searchForm {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+}
+
+.search-icon {
+  padding: 12px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.paginationBox {
+  display: flex;
+  justify-content: center;
+  margin: 6vmax;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.page-item {
+  background-color: white;
+  list-style: none;
+  border: 1px solid black;
+  padding: 0.5vmax 1.5vmax;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.page-item:first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+.page-item:last-child {
+  border-radius: 0 5px 5px 0;
+}
+
+.page-link {
+  text-decoration: none;
+  color: rgb(80, 80, 80);
+  transition: all 0.3s;
+}
+
+.page-item:hover {
+  background-color: rgb(230, 230, 230);
+}
+
+.page-item:hover .page-link {
+  color: rgb(80, 80, 80);
+}
+
+.pageItemActive {
+  background-color: tomato;
+}
+
+.pageLinkActive {
+  color: white;
+}
+
+.filterBox {
+  width: 8vmax;
+  position: absolute;
+  top: 20vmax;
+  left: 2vmax;
+}
+
+.categoryBox {
+  padding: 0%;
+}
+
+.category-link {
+  list-style: none;
+  color: rgba(0, 0, 0, 0.61);
+  margin: 0.4vmax;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.filterBox > fieldset {
+  border: 1px solid black;
+}
+
+.category-link:hover {
+  color: tomato;
+}
+
+.heightChange {
+  min-height: 70vh;
+}
+
+@media screen and (max-width: 600px) {
+  .filterBox {
+    width: 20vmax;
+    position: static;
+    margin: 0 auto 10px;
+  }
+}

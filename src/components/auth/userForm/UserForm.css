@@ -1,0 +1,143 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0;
+}
+.wrapper {
+  overflow: hidden;
+  width: 395px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+}
+.wrapper .title-text {
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.form-inner form .inp {
+  height: 50px;
+  width: 100%;
+  margin-top: 25px;
+}
+.form-inner form input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding-left: 15px;
+  border-radius: 12px;
+  border: 1px solid lightgrey;
+  border-bottom-width: 2px;
+  font-size: 15px;
+}
+
+.form-inner form .field input:focus {
+  border: 2px solid tomato;
+}
+
+.form-inner form .field input::placeholder {
+  color: #999;
+  transition: all 0.3s ease;
+}
+
+.form-inner form .pass-link {
+  margin-top: 20px;
+}
+.form-inner form .signup-link {
+  text-align: center;
+  margin-top: 30px;
+}
+.form-inner form .pass-link a,
+.form-inner form .signup-link a {
+  text-decoration: none;
+}
+.form-inner form .pass-link a:hover,
+.form-inner form .signup-link a:hover {
+  font-weight: 500;
+}
+
+.btnFilled {
+  height: 42px;
+  width: 100%;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  background-color: tomato;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.btnFilled:hover {
+  font-weight: 700;
+}
+
+.btnBorder {
+  height: 42px;
+  width: 100%;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  border: 2px solid tomato;
+  background-color: white;
+  color: tomato;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.errorMsg {
+  margin-top: 4px;
+  font-size: 14px;
+  color: #cf000f;
+  font-weight: 500;
+}
+
+.btn-pass {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.btn-disabled {
+  height: 42px;
+  width: 100%;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 20px;
+  background-color: rgb(192, 87, 69);
+  color: rgb(192, 178, 178);
+}
+
+.pass-box {
+  position: relative;
+}
+
+.pass-show {
+  border: none;
+  outline: none;
+  background: inherit;
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  cursor: pointer;
+}
+
+.updateProfileImg > img {
+  width: 3vmax;
+  border-radius: 100%;
+  margin: 1vmax;
+}
+
+.img-inp {
+  border: none !important;
+}
