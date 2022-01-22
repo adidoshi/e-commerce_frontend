@@ -184,6 +184,8 @@ const NewProduct = () => {
               ))}
             </div>
 
+            <small>Upload min 2 images</small>
+
             <Button
               id="createProductBtn"
               type="submit"
