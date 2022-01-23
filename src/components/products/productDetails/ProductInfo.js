@@ -24,6 +24,7 @@ import {
 import { addItemsToCart } from "../../../redux/actions/cartAction";
 // import product6 from "../../../assets/images/product-6.jpg";
 import ReviewCard from "./reviews/ReviewCard";
+import { NEW_REVIEW_RESET } from "../../../redux/constants/productsActionsTypes";
 
 const ProductInfo = () => {
   const [quantity, setQuantity] = useState(1);
@@ -37,6 +38,7 @@ const ProductInfo = () => {
   const { product, loading, error } = useSelector(
     (state) => state.productDetails
   );
+
   const { success, error: reviewError } = useSelector(
     (state) => state.newReview
   );
@@ -89,7 +91,7 @@ const ProductInfo = () => {
     if (success) {
       toast.success("Review submitted successfully!", successOptions);
       setComment("");
-      // dispatch({ type: NEW_REVIEW_RESET });
+      dispatch({ type: NEW_REVIEW_RESET });
     }
 
     dispatch(getProductDetails(params.id));

@@ -15,13 +15,13 @@ const cutomerComments = [
   {
     content:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta consequatur blanditiis",
-    name: "Sean Parker",
+    name: "Gorge Warner",
     img: user2,
   },
   {
     content:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta consequatur blanditiis",
-    name: "Sean Parker",
+    name: "Kelly Maze",
     img: user3,
   },
 ];

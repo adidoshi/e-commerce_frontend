@@ -1,5 +1,4 @@
 export const successOptions = {
-  duration: 6000,
   style: { backgroundColor: "green", color: "white" },
 };
 

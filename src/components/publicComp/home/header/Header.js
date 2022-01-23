@@ -1,6 +1,7 @@
 import React from "react";
 import "./Header.css";
 import landingPageImg from "../../../../assets/images/landingpageimg.png";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -16,9 +17,9 @@ const Header = () => {
                 Shop the most cool products available on the store <br /> let it
                 be tshirts, electronics and much more!
               </p>
-              <a href="/" className="btn">
+              <Link to="/products" className="btn">
                 Explore now &#8594;
-              </a>
+              </Link>
             </div>
             <div className="col-2">
               <img src={landingPageImg} alt="..." />

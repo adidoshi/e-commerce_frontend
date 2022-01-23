@@ -26,21 +26,39 @@ const Footer = () => {
               </p>
             </div>
             <div className="footer-col-3">
-              <h3>Useful links</h3>
+              <h3>Links</h3>
               <ul>
-                <li>Coupons</li>
-                <li>Blog pos</li>
-                <li>Return Policy</li>
-                <li>Join Affiliate</li>
+                <li>Portfolio</li>
+                <li>
+                  <a
+                    href="https://dev.to/adidoshi"
+                    rel="noreferrer"
+                    target="_blank"
+                    no>
+                    Dev blog
+                  </a>
+                </li>
               </ul>
             </div>
             <div className="footer-col-4">
-              <h3>Follow us</h3>
+              <h3>Socials</h3>
               <ul>
-                <li>Facebook</li>
-                <li>Twitter</li>
-                <li>Instagram</li>
-                <li>Youtube</li>
+                <li>
+                  <a
+                    href="https://github.com/adidoshi"
+                    rel="noreferrer"
+                    target="_blank"
+                    no>
+                    Github
+                  </a>
+                </li>
+                <a
+                  href="https://twitter.com/adidoshi08"
+                  rel="noreferrer"
+                  target="_blank"
+                  no>
+                  Twitter
+                </a>
               </ul>
             </div>
           </div>

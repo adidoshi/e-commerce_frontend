@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect, useState } from "react";
-import { useHistory, useParams } from "react-router-dom";
+import { Link, useHistory, useParams } from "react-router-dom";
 import "./ProductSection.css";
 import { useDispatch, useSelector } from "react-redux";
 import Pagination from "react-js-pagination";
@@ -17,11 +17,11 @@ import Loading from "../layout/loader/Loading";
 
 const categories = [
   "Electronics",
-  "Footwear",
   "Bottom",
   "Tops",
   "Camera",
-  "SmartPhones",
+  "Attire",
+  "Smartphones",
 ];
 
 const ProductSection = () => {
@@ -43,9 +43,6 @@ const ProductSection = () => {
     }
   };
 
-  const { products: allProds } = useSelector((state) => state.prods);
-  // console.log(allProds);
-
   const {
     products,
     loading,
@@ -54,7 +51,6 @@ const ProductSection = () => {
     resultPerPage,
     filteredProductsCount,
   } = useSelector((state) => state.products);
-  console.log(products);
 
   const setCurrentPageNo = (e) => {
     setCurrentPage(e);
@@ -88,7 +84,6 @@ const ProductSection = () => {
               <input
                 type="text"
                 className="searchInp"
-                // value={keywordcheck}
                 onChange={(e) => setKeywordCheck(e.target.value)}
               />
               <Search
@@ -98,11 +93,18 @@ const ProductSection = () => {
               />
             </form>
             <div className="row heightChange">
-              {allProds &&
-                allProds.map((product) => {
+              {products &&
+                products.map((product) => {
                   return <ProductCard product={product} key={product._id} />;
                 })}
             </div>
+            <Link to="/allproducts">
+              <button
+                className="btn"
+                style={{ border: "none", cursor: "pointer" }}>
+                All Products &#8594;
+              </button>
+            </Link>
           </div>
 
           <div className="filterBox">
