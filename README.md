@@ -32,17 +32,19 @@
 
 ### User routes -
 
-![image info](./src/assets/readmeImage/4.png)
+![image info](./src/assets/readmeImage/6.png)
 
 1. User profile page -> user can edit profile details like name, email & update a avatar (profile img) which gets uploaded to cloudinary.
 1. User can update password -> old password is validated for this request.
 1. User options are available in the speed dial icon list where user can access their cart, orders, profile, logout.
-1. Checkout process -
-   ![image info](./src/assets/readmeImage/3.png)
+
+![image info](./src/assets/readmeImage/4.png)
+**Checkout process** -
 
 - From cart page user is redirected to shipping page wherein user needs to fill shipping details and after submit it gets stored in local storage.
 - After that confirm order page -> where all items details, amount, address is visibile to check once by the user. Order details are being saved in _session storage_ so that when close the tab or browser it gets deleted.
 - Finally user is redirected to payment page. Mock (test mode) payment method achieved by **STRIPE** & **RAZORPAY** payment gateway.
+  ![image info](./src/assets/readmeImage/3.png)
 - Order success page.
 
 ### Admin Dashboard -
