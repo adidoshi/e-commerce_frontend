@@ -41,7 +41,7 @@ function App() {
         <Switch>
           {/* open routes */}
           <Route exact path="/" component={Home} />
-          {/* <Route component={NotFound} /> */}
+
           <Route exact path="/login" component={Login} />
           <Route exact path="/register" component={Register} />
           <Route exact path="/forgot-password" component={ForgotPassword} />
@@ -140,6 +140,7 @@ function App() {
             exact
             path="/admin/reviews"
             component={ProductReviews}></ProtectedRoute>
+          <Route component={NotFound} />
         </Switch>
       </Router>
     </>

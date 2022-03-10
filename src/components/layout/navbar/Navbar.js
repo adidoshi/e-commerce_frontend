@@ -25,9 +25,9 @@ const Navbar = () => {
         <div className="container">
           <div className="navbar">
             <div className="logo">
-              <a href="/">
+              <Link to="/">
                 <img src={mylogo2} width="125px" alt="..." />
-              </a>
+              </Link>
             </div>
             <h1 className="brandHeading">Splash Store</h1>
             <nav>
