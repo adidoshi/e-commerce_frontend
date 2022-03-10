@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.css";
-import landingPageImg from "../../../../assets/images/landingpageimg.png";
+import landingPageImg from "../../../../assets/images/header0.svg";
 import { Link } from "react-router-dom";
 
 const Header = () => {
