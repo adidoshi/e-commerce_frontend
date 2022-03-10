@@ -7,20 +7,19 @@ import "./Testimonial.css";
 
 const cutomerComments = [
   {
-    content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta consequatur blanditiis",
+    content: "My experience shopping here is awesome, resonable pricing!",
     name: "Sean Parker",
     img: user1,
   },
   {
     content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta consequatur blanditiis",
+      "Products here are amazing, I have purchased a lot of time. Worth it!",
     name: "Gorge Warner",
     img: user2,
   },
   {
     content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta consequatur blanditiis",
+      "Quality products, love the user interface, all payment options available.",
     name: "Kelly Maze",
     img: user3,
   },

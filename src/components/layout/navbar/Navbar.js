@@ -15,6 +15,10 @@ const Navbar = () => {
   const menuToggle = () => {
     setToggle(!toggle);
   };
+
+  const scrollToBottom = () => {
+    window.scrollTo(0, document.body.scrollHeight);
+  };
   return (
     <>
       <div className="nav_bg">
@@ -34,12 +38,7 @@ const Navbar = () => {
                 <li>
                   <Link to="/products">Prodcuts</Link>
                 </li>
-                <li>
-                  <Link to="/">About</Link>
-                </li>
-                <li>
-                  <Link to="/">Contact</Link>
-                </li>
+                <li onClick={scrollToBottom}>Contact</li>
                 <li>
                   <Link to="/account">Account</Link>
                 </li>

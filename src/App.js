@@ -30,6 +30,7 @@ import UpdateProfile from "./pages/user/UpdateProfile";
 import UpdatePassword from "./pages/user/UpdatePassword";
 import UpdateProduct from "./pages/admin/newProduct/UpdateProduct";
 import AllProducts from "./components/publicComp/AllProducts";
+import NotFound from "./components/utils/NotFound";
 
 function App() {
   const { userInfo } = useSelector((state) => state.auth);
@@ -40,6 +41,7 @@ function App() {
         <Switch>
           {/* open routes */}
           <Route exact path="/" component={Home} />
+          <Route component={<NotFound />} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/register" component={Register} />
           <Route exact path="/forgot-password" component={ForgotPassword} />
