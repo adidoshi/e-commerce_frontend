@@ -84,6 +84,7 @@ const ProductSection = () => {
               <input
                 type="text"
                 className="searchInp"
+                placeholder="Search products"
                 onChange={(e) => setKeywordCheck(e.target.value)}
               />
               <Search
@@ -108,17 +109,18 @@ const ProductSection = () => {
           </div>
 
           <div className="filterBox">
-            <Typography>Price</Typography>
+            <h3>Filters -</h3>
+            <h4 className="filterBox-titleOne">Price</h4>
             <Slider
               value={price}
               onChange={priceHandler}
-              valueLabelDisplay="auto"
+              valueLabelDisplay="on"
               aria-labelledby="range-slider"
               min={0}
               max={25000}
             />
 
-            <Typography>Categories</Typography>
+            <h4 className="filterBox-title">Categories</h4>
             <ul className="categoryBox">
               {categories.map((category) => {
                 return (
@@ -132,6 +134,7 @@ const ProductSection = () => {
               })}
             </ul>
 
+            <h4 className="filterBox-title">Ratings</h4>
             <fieldset>
               <Typography component="legend">* Above</Typography>
               <Slider

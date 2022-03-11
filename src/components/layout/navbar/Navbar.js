@@ -10,7 +10,7 @@ import { ShoppingCart } from "@material-ui/icons";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
-  const { userInfo } = useSelector((state) => state.auth);
+  // const { userInfo } = useSelector((state) => state.auth);
   const { cartItems } = useSelector((state) => state.cart);
   const menuToggle = () => {
     setToggle(!toggle);
@@ -45,11 +45,11 @@ const Navbar = () => {
               </ul>
             </nav>
             <Link to="/cart">
-              {!userInfo && (
-                <Badge badgeContent={cartItems?.length} color="secondary">
-                  <ShoppingCart color="action" fontSize="large" />
-                </Badge>
-              )}
+              {/* {!userInfo && ( */}
+              <Badge badgeContent={cartItems?.length} color="secondary">
+                <ShoppingCart color="action" fontSize="large" />
+              </Badge>
+              {/* )} */}
             </Link>
             <img
               src={menu}

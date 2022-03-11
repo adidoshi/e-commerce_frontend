@@ -76,6 +76,14 @@
   left: 2vmax;
 }
 
+.filterBox-titleOne {
+  margin-bottom: 2.5rem;
+  font-weight: bold;
+}
+
+.filterBox-title {
+  font-weight: bold;
+}
 .categoryBox {
   padding: 0%;
 }
