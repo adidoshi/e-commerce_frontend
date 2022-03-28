@@ -76,19 +76,8 @@
   background-color: rgba(0, 0, 0, 0.767);
 }
 
-/* .cartInput > input {
-  border: none;
-  padding: 0.5vmax;
-  width: 1vmax;
-  text-align: center;
-  outline: none;
-
-  color: rgba(0, 0, 0, 0.74);
-} */
-
 .inp-width {
   border: none;
-  /* padding: 0.5vmax; */
   text-align: center;
   width: 40px;
   outline: none;

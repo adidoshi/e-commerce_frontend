@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect, useState } from "react";
-import { Link, useHistory, useParams } from "react-router-dom";
+import { useHistory, useParams } from "react-router-dom";
 import "./ProductSection.css";
 import { useDispatch, useSelector } from "react-redux";
 import Pagination from "react-js-pagination";
@@ -27,7 +27,7 @@ const categories = [
 const ProductSection = () => {
   const [keywordcheck, setKeywordCheck] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
-  const [price, setPrice] = useState([0, 25000]);
+  const [price, setPrice] = useState([0, 80000]);
   const [category, setCategory] = useState("");
   const [ratings, setRatings] = useState(0);
   const history = useHistory();
@@ -79,7 +79,7 @@ const ProductSection = () => {
         <>
           <Toaster />
           <div className="small-container">
-            <h2 className="productPageTitle">All Products</h2>
+            <h2 className="productPageTitle">All Product</h2>
             <form className="searchForm">
               <input
                 type="text"
@@ -99,13 +99,13 @@ const ProductSection = () => {
                   return <ProductCard product={product} key={product._id} />;
                 })}
             </div>
-            <Link to="/allproducts">
+            {/* <Link to="/allproducts">
               <button
                 className="btn"
                 style={{ border: "none", cursor: "pointer" }}>
                 All Products &#8594;
               </button>
-            </Link>
+            </Link> */}
           </div>
 
           <div className="filterBox">
@@ -117,7 +117,7 @@ const ProductSection = () => {
               valueLabelDisplay="on"
               aria-labelledby="range-slider"
               min={0}
-              max={25000}
+              max={80000}
             />
 
             <h4 className="filterBox-title">Categories</h4>

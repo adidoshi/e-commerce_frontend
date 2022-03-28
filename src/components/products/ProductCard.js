@@ -1,7 +1,6 @@
 import React from "react";
 import "./ProductCard.css";
 import { Rating } from "@material-ui/lab";
-// import sampleImg from "../../assets/images/product-6.jpg";
 import { Link } from "react-router-dom";
 
 const ProductCard = ({ product }) => {

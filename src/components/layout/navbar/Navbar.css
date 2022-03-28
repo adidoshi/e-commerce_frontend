@@ -24,6 +24,10 @@ nav ul li {
   margin: 20px;
 }
 
+.cont {
+  font-weight: 300;
+}
+
 nav ul li:hover {
   font-weight: bold;
 }

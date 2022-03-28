@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import "./ProcessOrder.css";
 import { Link, useParams } from "react-router-dom";
 import { Typography, Button } from "@material-ui/core";
 import { useSelector, useDispatch } from "react-redux";
@@ -39,7 +38,7 @@ const ProcessOrder = () => {
     }
     if (isUpdated) {
       toast.success("Order Updated Successfully", successOptions);
-      //   history.push("/admin/orders");
+
       dispatch({ type: UPDATE_ORDER_RESET });
     }
 
@@ -181,7 +180,6 @@ const ProcessOrder = () => {
           )}
         </div>
       </div>
-      {/* <Footer /> */}
     </>
   );
 };

@@ -28,7 +28,16 @@ const Footer = () => {
             <div className="footer-col-3">
               <h3>Links</h3>
               <ul>
-                <li>Portfolio</li>
+                <li>
+                  <a
+                    href="https://adityadoshi.netlify.app/"
+                    rel="noreferrer"
+                    target="_blank"
+                    no>
+                    Portfolio
+                  </a>
+                </li>
+
                 <li>
                   <a
                     href="https://dev.to/adidoshi"

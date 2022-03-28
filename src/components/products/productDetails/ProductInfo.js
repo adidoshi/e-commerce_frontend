@@ -1,5 +1,4 @@
 import React, { useEffect, Fragment, useState } from "react";
-// import ReactStars from "react-rating-stars-component";
 import "./ProductInfo.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
@@ -22,7 +21,6 @@ import {
   newReview,
 } from "../../../redux/actions/productsAction";
 import { addItemsToCart } from "../../../redux/actions/cartAction";
-// import product6 from "../../../assets/images/product-6.jpg";
 import ReviewCard from "./reviews/ReviewCard";
 import { NEW_REVIEW_RESET } from "../../../redux/constants/productsActionsTypes";
 

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./NewProduct.css";
-// import "../../../components/auth/userForm/UserForm.css";
 import { Box, Button, CircularProgress } from "@material-ui/core";
 import {
   AccountTree,

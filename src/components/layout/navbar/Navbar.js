@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import mylogo2 from "../../../assets/images/mylogo2.png";
-// import cart from "../../../assets/images/cart.png";
 import menu from "../../../assets/images/menu.png";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
@@ -10,7 +9,6 @@ import { ShoppingCart } from "@material-ui/icons";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
-  // const { userInfo } = useSelector((state) => state.auth);
   const { cartItems } = useSelector((state) => state.cart);
   const menuToggle = () => {
     setToggle(!toggle);
@@ -38,7 +36,9 @@ const Navbar = () => {
                 <li>
                   <Link to="/products">Prodcuts</Link>
                 </li>
-                <li onClick={scrollToBottom}>Contact</li>
+                <li className="cont" onClick={scrollToBottom}>
+                  Contact
+                </li>
                 <li>
                   <Link to="/account">Account</Link>
                 </li>
