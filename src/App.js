@@ -29,7 +29,6 @@ import ProductReviews from "./pages/admin/reviewsRelated/ProductReviews";
 import UpdateProfile from "./pages/user/UpdateProfile";
 import UpdatePassword from "./pages/user/UpdatePassword";
 import UpdateProduct from "./pages/admin/newProduct/UpdateProduct";
-import AllProducts from "./components/publicComp/AllProducts";
 import NotFound from "./components/utils/NotFound";
 
 function App() {
@@ -52,7 +51,6 @@ function App() {
           />
           <Route exact path="/products" component={Products} />
           <Route exact path="/products/:keyword" component={Products} />
-          <Route exact path="/allproducts/" component={AllProducts} />
           <Route exact path="/product/:id" component={ProductDetails} />
           <Route exact path="/cart" component={Cart} />
 
