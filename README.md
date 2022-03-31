@@ -2,7 +2,6 @@
 
 ## Tech Stack used -
 
-- Backend - Nodejs + Expressjs + MongoDb
 - FrontEnd - ReactJs
 - React Redux for entire application state management.
 - Styling - Pure Vanilla CSS & MUI Icons
